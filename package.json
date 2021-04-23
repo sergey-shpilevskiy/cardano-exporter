@@ -1,0 +1,19 @@
+{
+  "name": "cardano-exporter",
+  "version": "0.0.1",
+  "description": "Fetch all cardano transactions and export them using san-exporter",
+  "main": "./index.js",
+  "author": "Sergey Shpilevskiy",
+  "dependencies": {
+    "micro": "^9.3.3",
+    "prom-client": "^11.5.3",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "san-exporter": "santiment/san-exporter",
+    "uuid": "^3.3.2",
+    "web3-utils": "^1.2.1"
+  },
+  "scripts": {
+    "start": "micro -l tcp://0.0.0.0:3000"
+  }
+}
